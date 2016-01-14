@@ -4135,7 +4135,7 @@ table th[class*="col-"] {
 
 .table>tfoot>tr.success>th {
 
-    background-color: #00cdcd
+    background-color: #fa8b00
 
 }
 
@@ -4219,7 +4219,7 @@ table th[class*="col-"] {
 
 .table>tfoot>tr.warning>th {
 
-    background-color: #00cdcd
+    background-color: #fa8b00
 
 }
 
@@ -5057,7 +5057,7 @@ select[multiple].form-group-lg .form-control {
 
     border-color: #ffffff;
 
-    background-color: #00cdcd
+    background-color: #fa8b00
 
 }
 
@@ -5587,9 +5587,9 @@ fieldset[disabled] .btn-default.active {
 
     color: #ffffff;
 
-    background-color: #2c3e50;
+    background-color: #636363;
 
-    border-color: #2c3e50
+    border-color: #333
 
 }
 
@@ -5607,9 +5607,9 @@ fieldset[disabled] .btn-default.active {
 
     color: #ffffff;
 
-    background-color: #1a242f;
+    background-color: #636363;
 
-    border-color: #161f29
+    border-color: #333;
 
 }
 
@@ -5659,15 +5659,15 @@ fieldset[disabled] .btn-primary:active,
 
 fieldset[disabled] .btn-primary.active {
 
-    background-color: #2c3e50;
+    background-color: #636363;
 
-    border-color: #2c3e50
+    border-color: #333
 
 }
 
 .btn-primary .badge {
 
-    color: #2c3e50;
+    color: #2c#00e50;
 
     background-color: #ffffff
 
@@ -5675,11 +5675,11 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-success {
 
-    color: #00cdcd;
+    color: #fa8b00;
 
     background-color: #fff;
 
-    border-color: #00cdcd;
+    border-color: #fa8b00;
 
 }
 
@@ -5697,9 +5697,9 @@ fieldset[disabled] .btn-primary.active {
 
     color: #ffffff;
 
-    background-color: #00cdcd;
+    background-color: #fa8b00;
 
-    border-color: #00cdcd;
+    border-color: #fa8b00;
 
 }
 
@@ -5749,15 +5749,15 @@ fieldset[disabled] .btn-success:active,
 
 fieldset[disabled] .btn-success.active {
 
-    background-color: #00cdcd;
+    background-color: #fa8b00;
 
-    border-color: #00cdcd
+    border-color: #fa8b00
 
 }
 
 .btn-success .badge {
 
-    color: #00cdcd;
+    color: #fa8b00;
 
     background-color: #ffffff
 
@@ -6035,7 +6035,7 @@ fieldset[disabled] .btn-danger.active {
 
 .btn-link {
 
-    color: #00cdcd;
+    color: #fa8b00;
 
     font-weight: normal;
 
@@ -6077,7 +6077,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:focus {
 
-    color: #00cdcd;
+    color: #fa8b00;
 
     text-decoration: underline;
 
@@ -7227,7 +7227,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
     background-color: #ecf0f1;
 
-    border-color: #00cdcd
+    border-color: #fa8b00
 
 }
 
@@ -8221,7 +8221,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .navbar-default .navbar-brand:focus {
 
-    color: #00cdcd;
+    color: #fa8b00;
 
     background-color: transparent
 
@@ -8245,7 +8245,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .navbar-default .navbar-nav>li>a:focus {
 
-    color: #00cdcd;
+    color: #fa8b00;
 
     background-color: transparent
 
@@ -8277,7 +8277,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .navbar-default .navbar-toggle {
 
-    border-color: #1a242f
+    border-color: #333;
 
 }
 
@@ -8285,7 +8285,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .navbar-default .navbar-toggle:focus {
 
-    background-color: #1a242f
+    background-color: #222;
 
 }
 
@@ -8327,7 +8327,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
 
-        color: #00cdcd;
+        color: #fa8b00;
 
         background-color: transparent
 
