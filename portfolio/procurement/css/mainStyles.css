@@ -1,0 +1,317 @@
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, Sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 10px;
+  background: #004a8d;
+}
+
+/*===== Font Awesome Links =====*/
+.user-login {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 25px;
+  text-align: right;
+}
+
+.user-login a {
+  color: #fff;
+  font-family: Arial, Helvetica, Sans-serif;
+  text-decoration: none;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+
+.user-login a:hover {
+  color: #2097ff;
+}
+.excel-download {
+  color: #004#004a8d785;
+  font-size: 1.8rem;
+  text-align: right;
+}
+.excel-download a {
+  color: #004785;
+  text-decoration: none;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+.excel-download a:hover {
+  color: #207345;
+}
+
+/*===== Copy Styles =====*/
+.pfs h1 {
+    color: #004785;
+    font-size: 2em;
+    font-weight: bold;
+}
+.pfs p {
+    font-size: 1.5rem;
+}
+
+.pfs-note {
+  font-size: 1.2rem;
+}
+.disclaimer {
+  font-size: 1rem;
+}
+.disclaimer h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 2px;
+}
+
+/*===== Form Fields =====*/
+.left-right-fields {
+  background: #ccc;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  min-height: 244px;
+  padding: 10px;
+}
+
+.center-field {
+  background: #efefef;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  min-height: 244px;
+  padding: 10px;
+}
+
+.row{
+  overflow: hidden; 
+}
+
+
+/*===== Margin Styles =====*/
+.mb20 {
+  margin-bottom: 20px;
+}
+
+
+/*---------- Table ----------*/
+.table-head {
+  background: #004a8d;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*---------- Footer ----------*/
+.footer {
+  width: 100%;
+  height: 40px;
+  background: #004a8d;
+}
+
+.footer p {
+  color: #fff;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+
+/*========== Login Styles ==========*/
+.card {
+  background: #fff;
+  border: 3px solid #ddd;
+  border-radius: 5px;
+  margin-top: 125px;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.gray-cell {
+  background: #efefef;
+  border: 1px dashed #aaa;
+  border-radius: 4px;
+  height: 100%;
+  padding: 10px;
+}
+
+.login-h1 {
+  color: #004a8d;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/*=== Icon Styles ===*/
+.user-icon {
+  background: #004a8d;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/*=== Login Form Styles ===*/
+.user-login input[type="text"] {
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: none;
+  display: block;
+  font-size: 1.1em;
+  margin: 20px auto;
+  padding: 5px 5px 5px 10px;
+  transition: box-shadow 0.3s, border 0.3s;
+  width: 90%;
+}
+
+.user-login input[type="text"]:focus {
+  border: 1px solid #41B6E6;
+  box-shadow: 0 0 5px 1px #41B6E6;
+}
+
+.user-login input[type="password"] {
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: none;
+  display: block;
+  font-size: 1.1em;
+  margin: 20px auto;
+  padding: 5px 5px 5px 10px;
+  transition: box-shadow 0.3s, border 0.3s;
+  width: 90%;
+}
+
+.user-login input[type="password"]:focus {
+  border: 1px solid #41B6E6;
+  box-shadow: 0 0 5px 1px #41B6E6;
+}
+
+.user-login input[type="submit"] {
+  background: #fff;
+  border: 1px solid #004785;
+  border-radius: 5px;
+  color: #004785;
+  display: block;
+  font-size: 1.1em;
+  margin: 20px auto;
+  padding: 5px 5px 5px 10px;
+  transition: ease-out .3s;
+  width: 90%;
+}
+
+.user-login input[type="submit"]:hover {
+  background: #004785;
+  color: #fff;
+  cursor: pointer;
+  transition: ease-in .3s;
+}
+
+.user-login input[type="checkbox"] {
+  color: #aaa;
+}
+
+.bar {
+  color: #aaa;
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  color: #aaa;
+  font-size: .9em;
+  transition: ease-out .125s;
+}
+
+.links a:hover {
+  color: #004785;
+  text-decoration: none;
+  transition: ease-in .2s;
+}
+
+.link a:visted {
+  color: #aaa;
+  text-decoration: none;
+}
+
+/*=== Login Footer Styles ===*/
+.fixed-footer {
+    position: fixed;
+}
+
+
+/*===== Responsive Tables ======*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+td, th {
+    padding: 8px;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    .card {
+        margin: 60px 10px;
+    }
+    
+    /* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { 
+        border: 1px solid #ccc; 
+        margin: 5px 0;
+    }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+    td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/* Label the data  */
+	td:nth-of-type(1):before { content: "NAICS Code"; }
+	td:nth-of-type(2):before { content: "Product"; }
+	td:nth-of-type(3):before { content: "Bio-Based"; }
+	td:nth-of-type(4):before { content: "Source of Supply"; }
+	td:nth-of-type(5):before { content: "Vendor Types"; }
+	td:nth-of-type(6):before { content: "Price Range"; }
+	td:nth-of-type(7):before { content: "RFP Quarter"; }
+	td:nth-of-type(8):before { content: "City"; }
+	td:nth-of-type(9):before { content: "State"; }
+	td:nth-of-type(10):before { content: "Sub-Agency"; }
+}

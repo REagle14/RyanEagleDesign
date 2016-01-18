@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Procurement Forecasting</title>
+        <link rel="icon" type="image/png" href="images/usda.ico">
+    
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Font Awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+        <!-- Custom CSS -->
+        <link href="css/business-frontpage.css" rel="stylesheet">
+        <link href="css/mainStyles.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="forecasting.html"><i class="fa fa-university"></i>&nbsp;US Department of Agriculture</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="user-login.html"><i class="fa fa-user"></i>&nbsp;Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 pfs mb20">
+                    <h1>Procurement Forecasting</h1>
+                     <p>The forecast data is for planning purposes, does not represent a pre-solicitation synopsis, does not constitute an invitation for bid or request for proposal, and is not a commitment by the government to purchase the desired products and services. Actual solicitation notices will be posted on FedBizOpps as prescribed by the Federal Acquisition Regulation (FAR). To learn more details about this forecast please view the following page: Legal Information. To view a complete listing of all forecasted procurement in Excel format, please click onto the spreadsheet icon above.</p>
+                </div>
+            </div>
+    
+            <!-- Procurement Search Form-->
+            <form>
+                <div class="row mb20">
+
+                    <!--Left Fields -->
+                    <div class="col-sm-3 left-right-fields">
+                        <div class="form-group">
+                            <label for="agency">Agency:</label>
+                            <select class="form-control" size="1" name="agency" id="agency">
+                                <option value="USDA">USDA</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sub-agency">Sub-Agency:</label>
+                            <select class="form-control" name="sub-agency" id="sub-agency">
+                                <option value="All">- Any Sub-Agency -</option>
+                                <option value="AMS">AMS: Agri Marketing Service</option>
+                                <option value="APHIS">APHIS: Animal and Plant Health Inspection Service</option>
+                                <option value="ARS">ARS: Agricultural Research Service</option>
+                                <option value="CFO">CFO: Office of Chief Financial Officer</option>
+                                <option value="CIO">CIO: Office of Chief Information Officer</option>
+                                <option value="CSREES">CSREES: Cooperative State Research, Education, and ...  Service</option>
+                                <option value="DA">DA: Departmental Administration</option>
+                                <option value="DM">DM: Departmental Management</option>
+                                <option value="ERS">ERS: Economic Research Service</option>
+                                <option value="FAS">FAS: Foreign Agricultural Service</option>
+                                <option value="FNS">FNS: Food and Nutrition Service</option>
+                                <option value="FS">FS: Forest Service</option>
+                                <option value="FSA">FSA: Farm Sevice Agency</option>
+                                <option value="FSIS">FSIS: Food Safety and Inspection Service</option>
+                                <option value="GIPSA">GIPSA: Grain Inspection, Packers, and Stockyards</option>
+                                <option value="IG">IG: Office of Inspector General</option>
+                                <option value="NASS">NASS: National Agricultural Statistics Service</option>
+                                <option value="NRCS">NRCS: Natural Resources Conservation Service</option>
+                                <option value="OCE">OCE: Office of Chief Economist</option>
+                            </select>
+                        </div>
+                    </div>
+
+                <!--Center Fields -->
+                    <div class="col-sm-6 center-field">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="naicsCode">NAICS Code:</label>
+                                    <input class="form-control" type="text" name="naicsCode" id="naicsCode" size="8" maxlength="8" placeholder="123456">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="bioBased">Biobased Product:</label>
+                                    <select class="form-control" size="1" name="bioBased" id="bioBased">
+                                        <option value="All">- Y/N -</option>
+                                        <option value="Y">Y</option>
+                                        <option value="N">N</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="supplySource">Source of Supply:</label>
+                                    <select class="form-control" size="1" name="supplySource" id="supplySource">
+                                        <option value="Any">- Any Source -</option>
+                                        <option value="ESB">ESB: Emerging Small Business Set-Aside</option>
+                                        <option value="GSA/FSS">GSA/FSS: Federal Supply Schedule</option>
+                                        <option value="C">C: Full and Open Competition</option>
+                                        <option value="HUBZ">HUBZ: HUBZone Small Business Set-Aside</option>
+                                        <option value="JWOD">JWOD: JWOD / NIB / NISH</option>
+                                        <option value="M-DO/TO">M-DO/TO: Mandatory Delivery Order Contracts</option>
+                                        <option value="N-DO/TO">N-DO/TO: Non-Mandatory Delivery Order Contracts</option>
+                                        <option value="8(A)">8(A): SBA Business Development Set-Aside</option>
+                                        <option value="SDV">SDV: Service Disabled Veteran-Owned Business Set-Aside</option>
+                                        <option value="SB">SB: Small Business Total Set-Aside</option>
+                                        <option value="VSB">VSB: Very Small Business Set-Aside</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="priceRange">Price Range:</label>
+                                    <select class="form-control" size="1" name="priceRange" id="priceRange">
+                                        <option value="Any">- Any Price -</option>
+                                        <option value="A">A: Less than $25,000</option>
+                                        <option value="B">B: $25,000 - $100,000</option>
+                                        <option value="C">C: $100,001 - $250,000</option>
+                                        <option value="D">D: $250,001 - $500,000</option>
+                                        <option value="E">E: $500,001 - $1,000,000</option>
+                                        <option value="F">F: $1,000,001 - $5,000,000</option>
+                                        <option value="G">G: $5,000,001 - $10,000,000</option>
+                                        <option value="H">H: Over $10,000,000</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="bioBased">Anticipated Quarter:</label>
+                                    <select class="form-control" size="1" name="bioBased" id="bioBased">
+                                        <option value="All">- All Quarters -</option>
+                                        <option value="Q1">First Quarter</option>
+                                        <option value="Q2">Second Quarter</option>
+                                        <option value="Q3">Third Quarter</option>
+                                        <option value="Q4">Fourth Quarter</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="supplySource">City:</label>
+                                    <input class="form-control" type="text" name="location" id="location" size="30" maxlength="30" placeholder="Washington">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="state">State:</label>
+                                    <select class="form-control" size="1" name="state" id="state">
+                                        <option value="All">All</option>
+                                        <option value="AL">AL: Alabama</option>
+                                        <option value="AK">AK: Alaska</option>
+                                        <option value="AS">AS: American Samoa</option>
+                                        <option value="AZ">AZ: Arizona</option>
+                                        <option value="AR">AR: Arkansas</option>
+                                        <option value="AE">AE: Armed Forces Europe</option>
+                                        <option value="CA">CA: California</option>
+                                        <option value="CO">CO: Colorado</option>
+                                        <option value="CT">CT: Connecticut</option>
+                                        <option value="DE">DE: Delaware</option>
+                                        <option value="DC">DC: District of Columbia</option>
+                                        <option value="FL">FL: Florida</option>
+                                        <option value="GA">GA: Georgia</option>
+                                        <option value="GU">GU: Guam</option>
+                                        <option value="HI">HI: Hawaii</option>
+                                        <option value="ID">ID: Idaho</option>
+                                        <option value="IL">IL: Illinois</option>
+                                        <option value="IN">IN: Indiana</option>
+                                        <option value="IA">IA: Iowa</option>
+                                        <option value="KS">KS: Kansas</option>
+                                        <option value="KY">KY: Kentucky</option>
+                                        <option value="LA">LA: Louisiana</option>
+                                        <option value="ME">ME: Maine</option>
+                                        <option value="MD">MD: Maryland</option>
+                                        <option value="MA">MA: Massachusetts</option>
+                                        <option value="MI">MI: Michigan</option>
+                                        <option value="MN">MN: Minnesota</option>
+                                        <option value="UM">UM: Minor Outlying Islands</option>
+                                        <option value="MS">MS: Mississippi</option>
+                                        <option value="MO">MO: Missouri</option>
+                                        <option value="MT">MT: Montana</option>
+                                        <option value="NE">NE: Nebraska</option>
+                                        <option value="NV">NV: Nevada</option>
+                                        <option value="NH">NH: New Hampshire</option>
+                                        <option value="NJ">NJ: New Jersey</option>
+                                        <option value="NM">NM: New Mexico</option>
+                                        <option value="NY">NY: New York</option>
+                                        <option value="NC">NC: North Carolina</option>
+                                        <option value="ND">ND: North Dakota</option>
+                                        <option value="MP">MP: Northern Mariana Islands</option>
+                                        <option value="OH">OH: Ohio</option>
+                                        <option value="OK">OK: Oklahoma</option>
+                                        <option value="OR">OR: Oregon</option>
+                                        <option value="PA">PA: Pennsylvania</option>
+                                        <option value="PR">PR: Puerto Rico</option>
+                                        <option value="RI">RI: Rhode Island</option>
+                                        <option value="SC">SC: South Carolina</option>
+                                        <option value="SD">SD: South Dakota</option>
+                                        <option value="TN">TN: Tennessee</option>
+                                        <option value="TX">TX: Texas</option>
+                                        <option value="UT">UT: Utah</option>
+                                        <option value="VT">VT: Vermont</option>
+                                        <option value="VA">VA: Viginia</option>
+                                        <option value="VI">VI: Virgin Islands</option>
+                                        <option value="WA">WA: Washington</option>
+                                        <option value="WV">WV: West Virginia</option>
+                                        <option value="WI">WI: Wisconsin</option>
+                                        <option value="WY">WY: Wyoming</option>
+                                    </select>
+                                </div>
+                            </div>
+                           <div class="col-sm-8">
+                                <div class="form-group">
+                                    <label for="supplySource">POC Email Address:</label>
+                                    <input class="form-control" type="text" name="location" id="location" size="50" maxlength="50" placeholder="email@address.gov">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Right Fields -->
+                    <div class="col-sm-3 left-right-fields">
+                        <div class="form-group">
+                            <label for="sort">Sort results by:</label>
+                            <select class="form-control" size="1" name="sort" id="sort">
+                                <option value="unsorted">- Select -</option>
+                                <option value="BB">Biobased Products</option>
+                                <option value="City">City</option>
+                                <option value="NAICSCode">NAICS Code</option>
+                                <option value="POCEmail">POC Email</option>
+                                <option value="PriceRange">Price Range</option>
+                                <option value="Product">Product Description</option>
+                                <option value="SBAVendorType">SBA Vendor Types</option>
+                                <option value="SourceOfSupply">Source of Supply</option>
+                                <option value="State">State</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sort">Then by:</label>
+                            <select class="form-control" size="1" name="sort" id="sort">
+                                <option value="unsorted">- Select -</option>
+                                <option value="BB">Biobased Products</option>
+                                <option value="City">City</option>
+                                <option value="NAICSCode">NAICS Code</option>
+                                <option value="POCEmail">POC Email</option>
+                                <option value="PriceRange">Price Range</option>
+                                <option value="Product">Product Description</option>
+                                <option value="SBAVendorType">SBA Vendor Types</option>
+                                <option value="SourceOfSupply">Source of Supply</option>
+                                <option value="State">State</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sort">Then by:</label>
+                            <select class="form-control" size="1" name="sort" id="sort">
+                                <option value="unsorted">- Select -</option>
+                                <option value="BB">Biobased Products</option>
+                                <option value="City">City</option>
+                                <option value="NAICSCode">NAICS Code</option>
+                                <option value="POCEmail">POC Email</option>
+                                <option value="PriceRange">Price Range</option>
+                                <option value="Product">Product Description</option>
+                                <option value="SBAVendorType">SBA Vendor Types</option>
+                                <option value="SourceOfSupply">Source of Supply</option>
+                                <option value="State">State</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            <!--Search Controls-->
+                <div class="row mb20">
+                    <div class="col-sm-3 col-sm-offset-9"> 
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i> Search</button>
+                        <button class="btn btn-default pull-right" type="submit">View All Listings</button>
+                    </div>
+                </div>
+            <!--End Search Form-->
+
+            <!--Search Results Table-->
+                <table class="table table-striped">
+                    <thead class="table-head">
+                        <tr>
+                            <th>NAICS Code</th>
+                            <th>Product</th>
+                            <th>Bio-Based</th>
+                            <th>Source of Supply</th>
+                            <th>Vendor Types</th>
+                            <th>Price Range</th>
+                            <th>RFP Quarter</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Sub-Agency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101110</td>
+                            <td>Product 1</td>
+                            <td>N</td>
+                            <td>AB</td>
+                            <td>ANY AB</td>
+                            <td>A</td>
+                            <td>Q1</td>
+                            <td>Amador RD</td>
+                            <td>CA</td>
+                            <td>FS</td>
+                        </tr>
+                        <tr>
+                            <td>111111</td>
+                            <td>Product 1</td>
+                            <td>N</td>
+                            <td>AB</td>
+                            <td>ANY AB</td>
+                            <td>A</td>
+                            <td>Q1</td>
+                            <td>Amador RD</td>
+                            <td>CA</td>
+                            <td>FS</td>
+                        </tr>
+                        <tr>
+                            <td>121112</td>
+                            <td>Product 2</td>
+                            <td>N</td>
+                            <td>CD</td>
+                            <td>ANY CD</td>
+                            <td>B</td>
+                            <td>Q2</td>
+                            <td>Golden Pond</td>
+                            <td>KY</td>
+                            <td>FS</td>
+                        </tr>
+                        <tr>
+                            <td>131113</td>
+                            <td>Product 3</td>
+                            <td>Y</td>
+                            <td>EF</td>
+                            <td>ANY EF</td>
+                            <td>C</td>
+                            <td>Q3</td>
+                            <td>Madison</td>
+                            <td>WI</td>
+                            <td>ARS</td>
+                        </tr>
+                        <tr>
+                            <td>141114</td>
+                            <td>Product 4</td>
+                            <td>Y</td>
+                            <td>GH</td>
+                            <td>ANY GH</td>
+                            <td>D</td>
+                            <td>Q4</td>
+                            <td>Madison</td>
+                            <td>WI</td>
+                            <td>ARS</td>
+                        </tr>
+                        <tr>
+                            <td>151115</td>
+                            <td>Product 5</td>
+                            <td>N</td>
+                            <td>IJ</td>
+                            <td>ANY IJ</td>
+                            <td>E</td>
+                            <td>Q1-4</td>
+                            <td>Stanislaus NF</td>
+                            <td>CA</td>
+                            <td>FS</td>
+                        </tr>
+                        <tr>
+                            <td>161116</td>
+                            <td>Product 6</td>
+                            <td>N</td>
+                            <td>IJ</td>
+                            <td>ANY IJ</td>
+                            <td>E</td>
+                            <td>Q1-4</td>
+                            <td>Stanislaus NF</td>
+                            <td>CA</td>
+                            <td>FS</td>
+                        </tr>
+                        <tr>
+                            <td>171117</td>
+                            <td>Product 7</td>
+                            <td>N</td>
+                            <td>IJ</td>
+                            <td>ANY IJ</td>
+                            <td>E</td>
+                            <td>Q1-4</td>
+                            <td>Stanislaus NF</td>
+                            <td>CA</td>
+                            <td>FS</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pfs-note mb20">
+                    <p><em>*If you are having problems viewing the content above, click on the "Export to Excel" link below to download a Microsoft Excel file of your search results.</em></p>
+                </div>
+            <!--End Search Results Table-->
+                
+                <div class="row mb20">
+                    <div class="col-sm-2 col-sm-offset-10">
+                        <button class="btn btn-default pull-right" type="submit"><i class="fa fa-file-excel-o"></i> Export to Excel</button>
+                        <!--<a href="#"><i class="fa fa-file-excel-o"></i> Export to Excel</a>-->
+                    </div>
+                </div>
+
+                <div class="disclaimer mb20">
+                    <h3><u>Disclaimer:</u></h3>
+                    <p>Title V, of Public Law 100-656 requires that Federal agencies make available its Procurement Forecast to the Small Business Administration (SBA) and to interested business owners. The forecast listing is not intended to be all-inclusive. The Forecast is one of many tools available to small businesses. All projected procurements are subject to revision or cancellation. Final decisions on the extent of competition, small business participation, estimated value, or any aspect of the procurement action will not be made until each procurement is initiated. The forecast data is for planning purposes, does not represent a pre-solicitation synopsis, does not constitute an invitation for bid or request for proposal, and is not a commitment by the government to purchase the desired products and services. Actual solicitation notices will be posted on FedBizOpps as prescribed by the Federal Acquisition Regulation (FAR).</p>
+                </div>
+
+            </form>
+            <hr>
+        </div>
+    
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-4">
+                        <p>Copyright &copy; 2016 | Ryan S. Eagle: Web &amp; Graphics Developer</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+    
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>
